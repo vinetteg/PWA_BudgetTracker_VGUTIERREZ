@@ -3,17 +3,18 @@ const FILES_TO_CACHE = [
   "/index.html",
   "/style.css",
   "/dist/app.bundle.js",
+  "/manifest.webmanifest",
   "https://fonts.googleapis.com/css?family=Istok+Web|Montserrat:800&display=swap",
   "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css",
 ];
 
-const PRECACHE = "precache-v1";
-const RUNTIME = "runtime";
+const CACHE_NAME = "static-cache-v2";
+const DATA_CACHE_NAME = "data-cache-v1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
-      .open(PRECACHE)
+      .open(CACHE_NAME)
       .then((cache) => cache.addAll(FILES_TO_CACHE))
       .then(self.skipWaiting())
   );
@@ -21,7 +22,7 @@ self.addEventListener("install", (event) => {
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener("activate", (event) => {
-  const currentCaches = [PRECACHE, RUNTIME];
+  const currentCaches = [CACHE_NAME, DATA_CACHE_NAME];
   event.waitUntil(
     caches
       .keys()
@@ -49,7 +50,7 @@ self.addEventListener("fetch", (event) => {
           return cachedResponse;
         }
 
-        return caches.open(RUNTIME).then((cache) => {
+        return caches.open(DATA_CACHE_NAME).then((cache) => {
           return fetch(event.request).then((response) => {
             return cache.put(event.request, response.clone()).then(() => {
               return response;
