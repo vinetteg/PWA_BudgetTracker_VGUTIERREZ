@@ -16,7 +16,7 @@ Offline Budget Tracker is a progressive web applicate that lets a use keep track
 
 <a name="usage"></a>
 
-To use this progressive web app, please go to the deployed website [here](https://vinetteg.github.io/vgutierrez_reactportfolio/#portfolio)
+To use this progressive web app, please go to the deployed website [here](https://fierce-mesa-43144.herokuapp.com/)
 
 ![Project Image](public/images/localhost_3000_.png)
 
@@ -36,7 +36,7 @@ To use this progressive web app, please go to the deployed website [here](https:
 
 <a name="test-instructions"></a>
 
-Check out my deployed profile [here](https://vinetteg.github.io/vgutierrez_reactportfolio/#portfolio)
+Navigate to the deployed application [here](https://fierce-mesa-43144.herokuapp.com/)
 Add entries while online: Enter entries upon visiting the page
 Add entries while offline: Go into Chrome Dev Tools. Toggle offline feature within the Service-worker. Add entry. Use Chrome Dev Tools to go back online and refresh browser.
 
@@ -45,4 +45,5 @@ Add entries while offline: Go into Chrome Dev Tools. Toggle offline feature with
 <a name="questions"></a>
 
 - [Github Link](https://github.com/vinetteg/PWA_BudgetTracker_VGUTIERREZ)
+- [Deployed application](https://fierce-mesa-43144.herokuapp.com/)
 - For additional questions, please contact me via email at vinette.gutierrez@gmail.com
