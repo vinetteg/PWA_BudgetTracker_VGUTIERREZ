@@ -36,6 +36,8 @@ To use this progressive web app, please go to the deployed website [here](https:
 
 <a name="test-instructions"></a>
 
+[Demo video](https://youtu.be/UPvQYTzqq6c)
+
 Navigate to the deployed application [here](https://fierce-mesa-43144.herokuapp.com/)
 Add entries while online: Enter entries upon visiting the page
 Add entries while offline: Go into Chrome Dev Tools. Toggle offline feature within the Service-worker. Add entry. Use Chrome Dev Tools to go back online and refresh browser.
