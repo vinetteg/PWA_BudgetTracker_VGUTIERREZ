@@ -18,7 +18,7 @@ Offline Budget Tracker is a progressive web applicate that lets a use keep track
 
 To use this progressive web app, please go to the deployed website [here](https://vinetteg.github.io/vgutierrez_reactportfolio/#portfolio)
 
-![Project Image](images/localhost_3000.png)
+![Project Image](public/images/localhost_3000_.png)
 
 # License
 
@@ -44,5 +44,5 @@ Add entries while offline: Go into Chrome Dev Tools. Toggle offline feature with
 
 <a name="questions"></a>
 
-- [Github Link](https://github.com/vinetteg/vgutierrez_reactportfolio)
+- [Github Link](https://github.com/vinetteg/PWA_BudgetTracker_VGUTIERREZ)
 - For additional questions, please contact me via email at vinette.gutierrez@gmail.com
